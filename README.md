@@ -100,7 +100,9 @@ Clone this repository to your desired folder:
 
 ### Install
 
-No instalation needed.
+```sh
+  bundle install
+```
 
 ### Usage
 
