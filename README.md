@@ -13,7 +13,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -60,17 +59,6 @@
 > Here are some key features of the application :
 
 - **Creating a data model using migration files to build the WebApp schema.**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-[Coming Soon](https://github.com/Nkaleth)
-
-
-<!-- > Here you can visit my live demo : -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
