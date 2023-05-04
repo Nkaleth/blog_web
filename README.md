@@ -59,6 +59,8 @@
 > Here are some key features of the application :
 
 - **Creating a data model using migration files to build the WebApp schema.**
+- **Creating model classes for all entities**
+- **Processing data in models.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,8 +120,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Validations and Model specs.**
-- **Processing data in models.**
 - **Setup and controllers.**
 - **Controllers specs.**
 - **Views.**
