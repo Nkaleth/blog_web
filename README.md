@@ -61,6 +61,7 @@
 - **Creating a data model using migration files to build the WebApp schema.**
 - **Creating model classes for all entities**
 - **Processing data in models.**
+- **Use of validations and unit test for models**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
