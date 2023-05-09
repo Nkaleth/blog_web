@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
   def index
-    puts 'Hello!!'
+    puts 'Simple action for Index'
+  end
+
+  def show
+    puts 'Simple action for Show'
   end
 end
