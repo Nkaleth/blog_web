@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
   def index
-    puts 'Hello'
+    puts 'Hello!!'
   end
 end
