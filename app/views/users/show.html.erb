@@ -1,1 +1,6 @@
-<h1>Here is a list of posts for a given user</h1>
+<h1>Here is a list of posts for the user with <% if @user %>
+ID: <%= @user.id %>
+<% else %>
+  This user does not exist!
+<% end %>
+</h1>

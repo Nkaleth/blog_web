@@ -4,6 +4,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    puts 'Simple action for Show'
+    @user = User.find_by(id: params[:id])
   end
 end
