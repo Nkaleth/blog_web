@@ -31,7 +31,7 @@ RSpec.describe 'Posts', type: :request do
       get "/users/:user_id/posts/#{post.id}"
       expect(response).to render_template(:show)
     end
-    
+
     it 'includes the correct placeholder text' do
       get "/users/:user_id/posts/#{post.id}"
       expect(response.body).to include('Here is the details of a given user of his post with')
