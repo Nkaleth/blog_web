@@ -1,6 +1,19 @@
-<h1>Here is a list of posts for the user with <% if @user %>
-ID: <%= @user.id %>
+<body class="d-flex flex-column align-items-center">
+  <% if @user%>
+  <h1>List of posts for this user:</h1>
+  <%= render 'shared/user', user: @user %>
+  <section class="d-flex justify-content-center border border-5 position-relative w-75 p-3">
+    <p class="position-absolute top-0 start-0 ms-3 mt-1 fw-bold" >Bio</p>
+    <p class="mt-4 fw-bold" ><%= @user.bio %></p>
+  </section>
+  <% if @user.three_recent_posts.each.count != 0  %>
+    <% @user.three_recent_posts.each do |post| %>
+          <%= render 'shared/post', post: post %> 
+    <% end %>      
+  <% else %>
+    <h2 class="m-3">This user has no posts!</h2>
+  <% end %>
 <% else %>
-  This user does not exist!
+  <h2>User does not exist!</h2>
 <% end %>
-</h1>
+</body>
