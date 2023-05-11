@@ -1,1 +1,22 @@
-<h1>Here is a list of the posts with its comments of a given user</h1>
+<body class="d-flex flex-column align-items-center">
+  <% if @user%>
+  <h1>Detailed posts for this user:</h1>
+  <%= render 'shared/user', user: @user %>
+  <% end %>
+  <% if @user.posts != 0  %>
+    <% @user.posts.each do |post| %>
+          <%= render 'shared/post', post: post %>
+          <section class="border border-5 position-relative w-75 p-4 mb-2">
+            <% if post.five_recent_comments.each.count == 0%>
+              <p>This post has no comments!</p>
+            <% end %>
+            <% post.five_recent_comments.each do |comment| %>
+              <p><%= comment.author.name%>: <%= comment.text%></p>            
+            <% end %> 
+          </section>
+    <% end %>
+  <% end %>
+  <div class="d-grid gap-2 d-md-block mb-2">
+    <button class="btn btn-primary" type="button">Pagination</button>
+  </div>
+</body>
