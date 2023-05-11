@@ -88,25 +88,24 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Nkaleth/blog_web.git
-  cd blog_web
+  git git@github.com:Nkaleth/blog_web.git
 ```
 
 ### Install
 
-```sh
-  bundle install
-```
+- bundle install
 
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  rails s
+  rails db:create
+  rails db:migrate
+  rails server
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p
 
 <!-- AUTHORS -->
 
