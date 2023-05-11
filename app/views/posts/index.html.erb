@@ -1,7 +1,7 @@
 <body class="d-flex flex-column align-items-center">
   <% if @user%>
-  <h1>Detailed posts for this user:</h1>
-  <%= render 'shared/user', user: @user %>
+    <h1>Detailed posts for this user:</h1>
+    <%= render 'shared/user', user: @user %>
   <% end %>
   <% if @user.posts != 0  %>
     <% @user.posts.each do |post| %>

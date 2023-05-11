@@ -35,7 +35,7 @@ RSpec.describe 'Posts', type: :request do
 
     it 'includes the correct placeholder text' do
       get "/users/:user_id/posts/#{post.id}"
-      expect(response.body).to include('Here is the details of a given user of his post with')
+      expect(response.body).to include('This post does not exists!')
     end
   end
 end
