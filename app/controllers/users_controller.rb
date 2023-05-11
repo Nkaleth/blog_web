@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    puts 'Simple action for Index'
+    @users = User.all
   end
 
   def show
