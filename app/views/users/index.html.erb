@@ -1,1 +1,8 @@
-<h1>Here is a list of the users</h1>
+<body class="d-flex flex-column align-items-center" >
+  <h1>User's Lists</h1>
+  <% @users.each do |user| %>
+    <%= link_to user_path(user), class:"no-style-link" do %>
+      <%= render 'shared/user', user: user %>
+    <% end %>
+  <% end %>
+</body>

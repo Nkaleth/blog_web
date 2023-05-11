@@ -14,7 +14,7 @@ RSpec.describe 'Users', type: :request do
 
     it 'includes the correct placeholder text' do
       get '/users/'
-      expect(response.body).to include('Here is a list of the users')
+      expect(response.body).to include("User's Lists")
     end
 
     describe 'GET /show' do
@@ -30,7 +30,7 @@ RSpec.describe 'Users', type: :request do
 
       it 'includes the correct placeholder text' do
         get '/users/:user_id/'
-        expect(response.body).to include('Here is a list of posts for the user with')
+        expect(response.body).to include('User does not exist!')
       end
     end
   end

@@ -1,6 +1,17 @@
-<h1>Here is the details of a given user of his post with <% if @post %>
-ID: <%= @post.id %>
-<% else %>
-  This post does not exist!
-<% end %>
-</h1>
+<body class="d-flex flex-column align-items-center">
+  <% if @post%>
+    <h1>Detailed post:</h1>
+    <%= render 'shared/post_detailed', post: @post %>
+  <% end %>
+  <section class="border border-5 position-relative w-75 p-4 mb-2 mt-2">
+    <% if @post.nil? %>
+      <p>This post does not exists!</p>
+    <% elsif @post.comments.empty?%>
+      <p>This post does not have comments!</p> 
+    <% elsif @post.comments.count > 0 %>
+      <% @post.comments.each do |comment| %>
+        <p><%= comment.author.name%>: <%= comment.text%></p>
+      <% end %>
+    <% end %>
+  </section>
+</body>

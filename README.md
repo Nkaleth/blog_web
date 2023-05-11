@@ -64,6 +64,7 @@
 - **Use of validations and unit test for models**
 - **Setup and controllers.**
 - **Controllers specs.**
+- **Views.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,25 +88,24 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Nkaleth/blog_web.git
-  cd blog_web
+  git git@github.com:Nkaleth/blog_web.git
 ```
 
 ### Install
 
-```sh
-  bundle install
-```
+- bundle install
 
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  rails s
+  rails db:create
+  rails db:migrate
+  rails server
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p
 
 <!-- AUTHORS -->
 
@@ -123,7 +123,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Views.**
 - **Forms.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,0 +1,15 @@
+.no-style-link {
+  all: unset;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.no-style-link2 {
+  all: unset;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
