@@ -24,18 +24,6 @@ class PostsController < ApplicationController
     end
   end
 
-  def create_comment
-    @first_user = current_user
-    @post = Post.find(params[:id])
-    @comment = Comment.new(comment_params.merge(post: @post, author: @first_user))
-
-    if @comment.save
-      redirect_to user_post_path(@first_user, @post)
-    else
-      render :new_comment
-    end
-  end
-
   def create_like
     @post = Post.find(params[:id])
     @like = Like.new(post: @post, author: current_user)
@@ -51,9 +39,5 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :text)
-  end
-
-  def comment_params
-    params.require(:comment).permit(:text)
   end
 end
