@@ -3,7 +3,7 @@
   <h2>Go back to users</h2>
 <% end %>
 
-<%= form_with model: @post, html: { class: 'form-horizontal p-5 w-50' } do |form| %>
+<%= form_with model: [@first_user, @post], html: { class: 'form-horizontal p-5 w-50' } do |form| %>
   <div class="form-group">
     <%= form.label :title, class: 'control-label col-sm-2' %>
     <div class="col-sm-10">
