@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    pp 'NEW FOR CREATING NEW POST'
+    @first_user = current_user
+    @posts = Post.new
   end
 end
