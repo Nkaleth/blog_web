@@ -12,6 +12,7 @@
     <% end %>
     <div class="d-grid gap-2 d-md-block">
       <%= link_to "See all posts", user_posts_path(@user), class: "btn btn-primary" %>
+      <%= link_to "Create new Post", new_user_post_path(@user), class: "btn btn-primary" %>
     </div>      
   <% else %>
     <h2 class="m-3">This user has no posts!</h2>
