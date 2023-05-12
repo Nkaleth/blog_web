@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show, :new] do
     resources :posts, only: [:index, :show, :new, :create] do
       post :create_comment, on: :member
+      post :create_like, on: :member
     end
   end
   # Defines the root path route ("/")

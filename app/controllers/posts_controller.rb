@@ -36,6 +36,17 @@ class PostsController < ApplicationController
     end
   end
 
+  def create_like
+    @post = Post.find(params[:id])
+    @like = Like.new(post: @post, author: current_user)
+
+    if @like.save
+      redirect_to user_post_path(current_user, @post)
+    else
+      render :new_comment
+    end
+  end
+
   private
 
   def post_params
