@@ -16,6 +16,7 @@
     </div>      
   <% else %>
     <h2 class="m-3">This user has no posts!</h2>
+    <%= link_to "Create new Post", new_user_post_path(@user), class: "btn btn-primary" %>
   <% end %>
 <% else %>
   <h2>User does not exist!</h2>
