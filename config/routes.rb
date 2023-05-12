@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :users, only: [:index, :show, :new] do
     resources :posts, only: [:index, :show, :new, :create] do
-      post :create_comment, on: :member
-      post :create_like, on: :member
+      resources :comments, only: [:new, :create]
+      resources :likes, only: [:create]
     end
   end
   # Defines the root path route ("/")
