@@ -24,18 +24,18 @@ RSpec.describe 'Posts', type: :request do
     let(:post) { Post.create!(title: 'My Post', comments_counter: 0, likes_counter: 0, author:) }
 
     it 'returns http success' do
-      get "/users/:user_id/posts/#{post.id}"
+      get "/users/#{author.id}/posts/#{post.id}"
       expect(response).to have_http_status(:success)
     end
 
     it 'renders the show template' do
-      get "/users/:user_id/posts/#{post.id}"
+      get "/users/#{author.id}/posts/#{post.id}"
       expect(response).to render_template(:show)
     end
 
     it 'includes the correct placeholder text' do
-      get "/users/:user_id/posts/#{post.id}"
-      expect(response.body).to include('This post does not exists!')
+      get "/users/#{author.id}/posts/#{post.id}"
+      expect(response.body).to include('Create Comment')
     end
   end
 end
