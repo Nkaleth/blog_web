@@ -3,18 +3,19 @@
     <h1>Detailed posts for this user:</h1>
     <%= render 'shared/user', user: @user %>
   <% end %>
-  <% if @user.posts != 0  %>
-    <% @user.posts.each do |post| %>
+  <% if @posts != 0  %>
+    <% @posts.each do |post| %>
       <%= link_to user_post_path(@user, post.id ), class:"no-style-link2" do %>
         <%= render 'shared/post', post: post %>
       <% end %>
       <section class="border border-5 position-relative w-75 p-4 mb-2">
-        <% if post.five_recent_comments.each.count == 0%>
+        <% if !post.five_recent_comments.any? %>
           <p>This post has no comments!</p>
+        <% else %>
+          <% post.five_recent_comments.each do |comment| %>
+            <p><%= comment.author.name%>: <%= comment.text%></p>            
+          <% end %> 
         <% end %>
-        <% post.five_recent_comments.each do |comment| %>
-          <p><%= comment.author.name%>: <%= comment.text%></p>            
-        <% end %> 
       </section>
     <% end %>
   <% end %>
