@@ -66,6 +66,7 @@
 - **Controllers specs.**
 - **Views.**
 - **Forms.**
+- **Validations, Model specs, and n+1 problems.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +125,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Validations, Model specs, and n+1 problems.**
 - **Add Devise.**
 - **Add authorization rules.**
 - **Integration specs for Views.**
