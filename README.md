@@ -107,18 +107,36 @@ To run the project, execute the following command:
   rails db:seed
   rails server
 ```
+### Capybara tests
+
+To run the capybara tests for the views, execute the following command:
+
+```sh
+  rspec spec/system/
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **Nilton Segura**
 
 - GitHub: [@Nkaleth](https://github.com/Nkaleth)
 - Twitter: [@NoeSeguraL](https://twitter.com/NoeSeguraL)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/niltonsegura/)
+
+👤 **Jose Montoya**
+
+- GitHub: [@jmonto55](https://github.com/jmonto55)
+- LinkedIn: [jmontodev](https://www.linkedin.com/in/jmontodev/)
+
+👤 **Dennis Every**
+
+- GitHub: [@dennis-every](https://github.com/dennis-every)
+- Twitter: [@dennis_every](https://twitter.com/dennis_every)
+- LinkedIn: [dennis-every](https://www.linkedin.com/in/dennis-every/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
