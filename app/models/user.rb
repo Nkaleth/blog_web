@@ -9,6 +9,10 @@ class User < ApplicationRecord
     posts.order(created_at: :desc).limit(3)
   end
 
+  def three_first_posts
+    posts.order(created_at: :asc).limit(3)
+  end
+
   def retrieve_all_user_posts
     posts.includes(:comments, comments: :author)
   end

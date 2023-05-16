@@ -16,7 +16,7 @@ RSpec.feature 'User show page', type: :feature do
   end
 
   scenario "I can see the user's first 3 posts" do
-    user.three_recent_posts.each do |post|
+    user.three_first_posts.each do |post|
       expect(page).to have_content(post.text)
     end
   end
@@ -26,7 +26,7 @@ RSpec.feature 'User show page', type: :feature do
   end
 
   scenario "When I click a user's post, it redirects me to that post's show page" do
-    first_post = user.three_recent_posts.first
+    first_post = user.three_first_posts.first
     find('section', text: first_post.text).find(:xpath, '..').click
     expect(current_path).to eq(user_post_path(user, first_post))
   end
