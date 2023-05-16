@@ -6,9 +6,11 @@
     <p class="position-absolute top-0 start-0 ms-3 mt-1 fw-bold" >Bio</p>
     <p class="mt-4 fw-bold" ><%= @user.bio %></p>
   </section>
-  <% if @user.three_recent_posts.each.count != 0  %>
-    <% @user.three_recent_posts.each do |post| %>
-          <%= render 'shared/post', post: post %> 
+  <% if @user.three_first_posts.each.count != 0  %>
+    <% @user.three_first_posts.each do |post| %>
+      <%= link_to user_post_path(@user, post.id ), class:"no-style-link2" do %>
+        <%= render 'shared/post', post: post %>
+      <% end %>
     <% end %>
     <div class="d-grid gap-2 d-md-block">
       <%= link_to "See all posts", user_posts_path(@user), class: "btn btn-primary" %>

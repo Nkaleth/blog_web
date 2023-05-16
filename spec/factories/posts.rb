@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :post do
     title { 'Test Post' }
-    text { 'Test post content.' }
+    sequence(:text) { |n| "Test post content #{n}" }
     comments_counter { 0 }
     likes_counter { 0 }
   end
