@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature 'User show page', type: :feature do
-  let(:user) { create(:user, bio: "My bio") }
+  let(:user) { create(:user, bio: 'My bio') }
   let!(:posts) { create_list(:post, 5, author_id: user.id) }
 
   before do
