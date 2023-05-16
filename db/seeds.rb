@@ -11,7 +11,7 @@ second_user = User.create(name: 'Lilly', photo: '/assets/user_avatar-svgrepo-com
 second_user.skip_confirmation!
 third_user = User.create(name: 'Luis', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Colombia.', email: 'luis@mail.com', password: '123456789sdgdf')
 third_user.skip_confirmation!
-fourth_user = User.create(name: 'Abel', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Moroco.', email: 'abel@mail.com', password: 123456789)
+fourth_user = User.create(name: 'Abel', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Moroco.', email: 'abel@mail.com', password: '123456789')
 fourth_user.skip_confirmation!
 
 first_post_first = Post.create(author: first_user, title: 'Hello', text: 'This is my first post')
