@@ -1,15 +1,15 @@
 <body class="d-flex flex-column align-items-center">
-  <% if @user%>
+  <% if @user %>
     <h1>Detailed posts for this user:</h1>
     <%= render 'shared/user', user: @user %>
   <% end %>
-  <% if @posts != 0  %>
+  <% if @posts %>
     <% @posts.each do |post| %>
       <%= link_to user_post_path(@user, post.id ), class:"no-style-link2" do %>
         <%= render 'shared/post', post: post %>
       <% end %>
       <section class="border border-5 position-relative w-75 p-4 mb-2">
-        <% if !post.five_recent_comments.any? %>
+        <% if !post.comments.any? %>
           <p>This post has no comments!</p>
         <% else %>
           <% post.five_recent_comments.each do |comment| %>
