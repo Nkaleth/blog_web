@@ -67,6 +67,7 @@
 - **Views.**
 - **Forms.**
 - **Validations, Model specs, and n+1 problems.**
+- **Add Devise.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,16 +105,13 @@ To run the project, execute the following command:
 ```sh
   rails db:create
   rails db:migrate
-  rails db:seed
   rails server
 ```
-### Capybara tests
+### Usage II
 
-To run the capybara tests for the views, execute the following command:
+Register a new user and test the page creating
+posts, adding comments and likes. 
 
-```sh
-  rspec spec/system/
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p
 
@@ -144,7 +142,6 @@ To run the capybara tests for the views, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add Devise.**
 - **Add authorization rules.**
 - **Integration specs for Views.**
 - **Add API endpoints.**

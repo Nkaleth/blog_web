@@ -5,10 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-first_user = User.create(name: 'Tom', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Mexico.')
-second_user = User.create(name: 'Lilly', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Poland.')
-third_user = User.create(name: 'Luis', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Colombia.')
-fourth_user = User.create(name: 'Abel', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Moroco.')
+first_user = User.create(name: 'Tom', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Mexico.', email: 'tom@mail.com', password: '123456789')
+first_user.skip_confirmation!
+second_user = User.create(name: 'Lilly', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Poland.', email: 'lilly@mail.com', password: '123456789')
+second_user.skip_confirmation!
+third_user = User.create(name: 'Luis', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Colombia.', email: 'luis@mail.com', password: '123456789sdgdf')
+third_user.skip_confirmation!
+fourth_user = User.create(name: 'Abel', photo: '/assets/user_avatar-svgrepo-com.svg', bio: 'Teacher from Moroco.', email: 'abel@mail.com', password: '123456789')
+fourth_user.skip_confirmation!
 
 first_post_first = Post.create(author: first_user, title: 'Hello', text: 'This is my first post')
 second_post_first = Post.create(author: first_user, title: 'Hello', text: 'This is my second post')

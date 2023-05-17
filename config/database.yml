@@ -23,7 +23,6 @@ default: &default
   # username: postgres
   # password: 2352122Aa.
 
-
 development:
   <<: *default
   database: blog_web_development
