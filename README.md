@@ -67,6 +67,7 @@
 - **Views.**
 - **Forms.**
 - **Validations, Model specs, and n+1 problems.**
+- **Add Devise.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +144,6 @@ To run the capybara tests for the views, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add Devise.**
 - **Add authorization rules.**
 - **Integration specs for Views.**
 - **Add API endpoints.**
