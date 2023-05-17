@@ -107,13 +107,11 @@ To run the project, execute the following command:
   rails db:migrate
   rails server
 ```
-### Capybara tests
+### Usage II
 
-To run the capybara tests for the views, execute the following command:
+Register a new user and test the page creating
+posts, adding comments and likes. 
 
-```sh
-  rspec spec/system/
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p
 
